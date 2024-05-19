@@ -3,6 +3,12 @@
 ### Dates: August 4-10, 2024
 ### Location: [University of Georgia Marine Institute on Sapelo Island](https://ugami.uga.edu/)
 
+### Application: LINK HERE
+
+Applications to participate will close on **Friday June 14th**, and selected participants will be notified of acceptance the following week (week of June 17th). Due to space and funding constraits, this year's workshop will be capped at 20 participants. Travel, lodging, and meal expenses will be fully covered for all workshop participants.
+
+This workshop is targeted towards **graduate students** and **postdoctoral researchers**, although we will consider applications from other early-career scientists who would especially benefit from participating. All participants are expected to have some basic familiarity with command line tools and scientfic programming (e.g. Unix, R, and/or Python) in order to fully benefit from the workshop trainings. This is NOT an introductory programming course; we will focusing on -Omics workflows and downstream data visualizations of target datasets. 
+
 --------
 
 ### Provisional Schedule
