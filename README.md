@@ -16,3 +16,23 @@ Mornings - Bioinformatics Data Visualization / Storytelling for scientific audie
 Afternoons - Science Communication Training / Storytelling for general audiences (Instructor: Virginia Schutte)
 
 **Saturday August 10th** - Departure, take 8:30AM for 12:30pm [ferry back to mainland](https://ugami.uga.edu/ferry/)
+
+### Workshop Description
+
+This workshop series is designed to foster practical skills in both bioinformatics and science communication, training participants in how to “tell stories through data.” Most practicing researchers do not have formal training in storytelling or science communication. Yet, evidence has shown that storytelling is a persuasive communication tool because humans connect with the narrative format more than isolated facts ([Dahlstrom 2014](https://www.pnas.org/doi/abs/10.1073/pnas.1320645111?doi=10.1073%2Fpnas.1320645111)). Storytelling can be defined as “_how to convey ideas to a specific audience using evidence and narrative_”, and since this process involves a formal underlying structure ([Reagan et al. 2016](https://epjdatascience.springeropen.com/articles/10.1140/epjds/s13688-016-0093-1)), it is equally useful for both scientific manuscripts and public outreach materials.
+
+"Telling Stories Through Data" workshops will be centered around two overarching questions: **How do you find the story?** and **What do you do with the story?** Morning sessions (led by Holly Bik) will focus on how these questions are applied to bioinformatics data analyses, guiding participants in how to visualize data, conduct appropriate statistical analyses, and build narratives for scientific manuscripts. Afternoon sessions (led by Virginia Schutte) will provide complementary training on storytelling for public audiences, teaching participants how to identify compelling public narratives and prepare science outreach products. 
+
+We anticipate a number of discrete outputs from each workshop. First, participants will compile a set of open-source bioinformatics workflows (scripts, code, and  figures/visuals published on Github) that are specifically tailored towards a particular data analysis application. These workflows will emphasize rapid and novel data visualizations to identify subtle data patterns using a variety of software tools, and will be broadly useful for anyone working with marine or terrestrial -Omics datasets. Secondly, these workshops will produce a suite of digital science outreach products (drawings, photographs, infographics, videos, etc.) that instructors and participants will disseminate through various platforms (Twitter/BlueSky, Instagram, TikTok, YouTube, etc.). Digital outreach products will be designed to raise awareness of marine biodiversity and spark conversations about the importance of understudied benthic and deep-sea habitats. 
+
+This is a series of three summer workshops funded through Holly Bik's CAREER grant from the National Science Foundation [DEB-2144304](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2144304&HistoricalAwards=false). The data analysis focus of each year's workshop is as follows:
+
+**2024** - Metabarcoding / eDNA data analysis (**dataset**: 18S rRNA amplicons obtained freom bulk marine sediments in Southern California; Illumina sequence data)
+
+**2025** - Host-Associated Microbiome data analysis (**dataset**: Holobiont metagenomes and complementary bacterial isolate genomes; Illumina short read and PacBio long read sequence data)
+
+**2026** - Meiofaunal Phylogenomics (**dataset**: marine nematode genome skims and metatranscriptomes; Illumina short read and PacBio long read sequence data)
+
+
+
+
