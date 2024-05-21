@@ -3,7 +3,7 @@
 ### Dates: August 4-10, 2024
 ### Location: [University of Georgia Marine Institute on Sapelo Island](https://ugami.uga.edu/)
 
-### Application: LINK HERE
+### Application: [https://forms.gle/Jza1rAVy6Aubu7wc8](https://forms.gle/Jza1rAVy6Aubu7wc8)
 
 Applications to participate will close on **Friday June 14th**, and selected participants will be notified of acceptance the following week (week of June 17th). Due to space and funding constraits, this year's workshop will be capped at 20 participants. Travel, lodging, and meal expenses will be fully covered for all workshop participants.
 
