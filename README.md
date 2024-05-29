@@ -11,6 +11,8 @@ This workshop is targeted towards **graduate students** and **postdoctoral resea
 
 Any questions about this workshop should be directed to Holly Bik at UGA (lead organizer and NSF grant PI) - [hbik@uga.edu](mailto:hbik@uga.edu)
 
+![TSTD2024-GitHub-image](TSTD2024-GitHub-image.png)
+
 --------
 
 ### Provisional Schedule
