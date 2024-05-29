@@ -25,7 +25,7 @@ Mornings - Bioinformatics Data Visualization / Storytelling for scientific audie
 
 Afternoons - Science Communication Training / Storytelling for general audiences (Instructor: [Virginia Schutte](https://www.virginiaschutte.com/), freelance science communicator)
 
-**Saturday August 10th** - Departure, take 8:30AM for 12:30pm [ferry back to mainland](https://ugami.uga.edu/ferry/)
+**Saturday August 10th** - Departure, take 8:30AM or 12:30pm [ferry back to mainland](https://ugami.uga.edu/ferry/)
 
 ### Workshop Description
 
