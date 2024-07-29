@@ -1,0 +1,80 @@
+---
+title: "00-create-phyloseq-object"
+author: "desantiago"
+date: "2024-06-04"
+output: github_document
+---
+
+### Load required libraries
+
+```{r setup, echo=FALSE}
+# load libraries
+
+if (!require(phyloseq)) install.packages("phyloseq")
+if (!require(tidyr)) install.packages("tidyr")
+if (!require(devtools)) install.packages("devtools")
+if (!require(qiime2R)) devtools::install_github("jbisanz/qiime2R")
+if (!require(devtools)) install.packages("ggplot2")
+if (!require(devtools)) install.packages("decontam")
+
+library(phyloseq)
+library(tidyr)
+library(devtools)
+library(qiime2R)
+library(ggplot2)
+library(decontam)
+```
+
+### Read artifact files (.qza) using qiime2R
+
+```{r}
+otus <- read_qza("data/03-dada2-independent-table.qza")
+taxonomy <- read_qza("data/04-taxonomy-independent-classification.qza")
+tree <- read_qza("data/05-phylogeny-independent-tree-midrooted.qza")
+metadata <- read.delim2("data/metadata_SONGS_CABight_DDT.txt", sep = "\t", row.names = 1)
+```
+
+
+### View QZA files
+QZA files are zipped folders with many different pieces of information including data provenance, format, version, and the data. We need to extract out data from this file type
+``` {r}
+otu_df <- otus$data # we can view and save the actual data by specifying '$'
+taxonomy_df <- taxonomy$data # save taxonomy info as a dataframe
+phylo_tree <- tree$data # tree data is stored as a phyloseq object
+```
+
+
+### View taxonomy file 
+The taxonomy file is not formatted correctly. All the taxonomy is in one column. Each taxonomic level has to be in its own column
+```{r}
+head(taxonomy_df) 
+```
+
+### Split taxonomy into different columns and replace NA's with Unassigned
+```{r}
+taxonomy_fixed_df <- taxonomy_df %>% separate_wider_delim(Taxon, delim = ";", names_sep = "", too_few = "align_start")
+taxonomy_fixed_df[is.na(taxonomy_fixed_df)] <- "Unassigned" # rename NAs into unassigned
+head(taxonomy_fixed_df)
+```
+
+### Merge files into a phyloseq object 
+convert your otu table, taxonomy files, and tree into phylseq object
+```{r}
+# fix taxonomy format 
+taxonomy_fixed_df <- as.data.frame(taxonomy_fixed_df) # force into a dataframe
+row.names(taxonomy_fixed_df) <- taxonomy_fixed_df$Feature.ID # make first column into row names
+taxonomy_fixed_df$Feature.ID <- NULL # remove the first column
+taxonomy_matrix <- as.matrix(taxonomy_fixed_df) # convert to a matrix 
+
+physeq_otu <- otu_table(otu_df, taxa_are_rows = T) # convert into phyloseq object
+physeq_tax <- tax_table(taxonomy_matrix) # convert into phyloseq object
+physeq_meta <- sample_data(metadata) # convert into phyloseq object
+
+phylo_object <- phyloseq(physeq_otu, physeq_tax, physeq_meta) # merge into phyloseq object
+phylo_object_tree <- merge_phyloseq(phylo_object, phylo_tree) # add tree into phyloseq object
+```
+
+### See phyloseq summary
+```{r}
+phylo_object_tree
+```
